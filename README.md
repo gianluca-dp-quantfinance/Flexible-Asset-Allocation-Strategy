@@ -16,7 +16,7 @@ The strategy dynamically allocates capital across a diversified multi-asset univ
 
 Assets are ranked using a multi-factor scoring function, selecting the top-performing subset at each monthly rebalance.
 
-L_i = w_R * rank(r_i) + w_V * rank(v_i) + w_C * rank(c_i)
+$L_i = w_R \cdot \text{rank}(r_i) + w_V \cdot \text{rank}(v_i) + w_C \cdot \text{rank}(c_i)$
 
 Lower score implies a better risk-return profile.
 
