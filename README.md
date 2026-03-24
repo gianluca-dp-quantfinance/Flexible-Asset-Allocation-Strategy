@@ -148,7 +148,7 @@ Used to evaluate overall performance relative to a benchmark.
 
 ---
 
-## Extensions
+## Possible extensions
 
 * Transaction costs inclusion
 * Risk parity allocation
