@@ -68,17 +68,32 @@ Two extensions are introduced:
 --- 
 ## Dataset
 
-The dataset spans 1987–2017 and includes:
+The strategy is designed to work with **daily price time series structured as MATLAB timetables**, with dates and asset prices aligned across columns.
 
-* Government bonds (short and long term)
-* Corporate bonds (investment grade and high yield)
-* Inflation-linked bonds
-* Global equities (developed and emerging)
-* Commodities (S&P GSCI)
+---
 
-Risk-free proxy:
+### Required Data Format
+The input data must follow this structure:
 
-* US Treasury Bills (1–3 month)
+* First column: `Date` (datetime format)
+* Remaining columns: asset prices (numeric), with column names corresponding to asset identifiers
+* Each row: one daily observation
+
+---
+
+### Key Requirements
+
+* Dates must be properly formatted and convertible to `datetime`
+* Each column represents a different asset
+* Missing values (`NaN`) are allowed to avoid survivorship bias but should be handled appropriately
+* Prices must be **aligned across assets and time**
+* The same asset universe must be used consistently across the dataset
+
+---
+
+### Note
+
+Monthly data used for momentum and portfolio rebalancing are internally constructed from daily prices within the script.
 
 ---
 
