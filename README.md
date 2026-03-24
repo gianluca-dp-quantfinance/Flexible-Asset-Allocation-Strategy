@@ -47,7 +47,7 @@ Lower score implies a better risk-return profile.
 Two extensions are introduced:
 
 1. Momentum-weighted allocation:
-   w_i ∝ MOM_i
+  $w_i \propto \mathrm{MOM}_i$
 
 2. Semi-standard deviation (downside risk):
    Focuses only on negative returns, improving risk measurement consistency.
