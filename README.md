@@ -53,7 +53,19 @@ Two extensions are introduced:
    Focuses only on negative returns, improving risk measurement consistency.
 
 ---
+## Repository Structure
 
+- `FAA.m` — implements the original Flexible Asset Allocation (FAA) backtest, including momentum, volatility, and correlation-based ranking
+
+- `FAA_modified.m` — implements the modified FAA strategy with momentum-weighted allocation and downside risk measures
+
+- `RunBacktestStrategy.m` — runs the original FAA backtest and generates portfolio performance
+
+- `RunBacktestStrategy_modified.m` — runs the modified FAA strategy
+
+- `evaluateStrategy.m` — computes performance, risk, and robustness metrics
+
+--- 
 ## Dataset
 
 The dataset spans 1987–2017 and includes:
