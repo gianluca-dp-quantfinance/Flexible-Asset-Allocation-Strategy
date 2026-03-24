@@ -121,7 +121,7 @@ Used to evaluate overall performance relative to a benchmark.
 
 ## Key Results
 
-* Multi-factor strategies (RAVC) outperform simpler momentum models in risk-adjusted terms
+* Multi-factor strategies (RAV, RAVC) outperform simpler momentum models in risk-adjusted terms
 
 * Significant improvement in:
 
@@ -170,3 +170,8 @@ Combining momentum with volatility and correlation produces a more stable and ro
 
 * Keller & Van Putten (2012) – Generalized Momentum and Flexible Asset Allocation
 * Alpha Architect – FAA implementation
+
+---
+
+## Authors
+Francesco Melocchi, Gianluca De Pieri, Tommaso Rossini
